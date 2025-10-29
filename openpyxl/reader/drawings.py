@@ -45,9 +45,10 @@ def find_images(archive, path):
         except TypeError as e:
             warn(f"Unable to read chart {rel.id} from {path} {e}")
             continue
-        chart = read_chart(cs)
-        chart.anchor = rel.anchor
-        charts.append(chart)
+        chart_lst = read_chart(cs)
+        for chart in chart_lst:
+            chart.anchor = rel.anchor
+            charts.append(chart)
 
     images = []
     if not PILImage: # Pillow not installed, drop images
