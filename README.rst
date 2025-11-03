@@ -1,3 +1,5 @@
+# 2025-11-3 修改添加read_chart[0]改为读所有，发现有新的bug。。先不要用。
+
 .. image:: https://coveralls.io/repos/bitbucket/openpyxl/openpyxl/badge.svg?branch=default
     :target: https://coveralls.io/bitbucket/openpyxl/openpyxl?branch=default
     :alt: coverage status
